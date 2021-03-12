@@ -3,3 +3,6 @@ name = "riffy"
 version = "0.1.0"
 authors = ["Bart Massey <bart.massey@gmail.com>"]
 edition = "2018"
+
+[dependencies]
+encoding = "0.2.33"
