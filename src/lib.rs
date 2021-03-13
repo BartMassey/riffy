@@ -11,5 +11,7 @@ pub use oem_cp;
 #[non_exhaustive]
 pub enum ConvertError {
     Range,
-    Encoding,
+    StringEncoding,
+    StringDecoding,
+    CodePage,
 }
