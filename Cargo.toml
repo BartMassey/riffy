@@ -5,4 +5,10 @@ authors = ["Bart Massey <bart.massey@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-encoding = "0.2.33"
+codepage = "0.1.1"
+encoding_rs = "0.8.28"
+
+[dependencies.oem_cp]
+git = "https://github.com/BartMassey/rust-oem-cp"
+branch = "pub-ahash"
+version = "0.2.0"
