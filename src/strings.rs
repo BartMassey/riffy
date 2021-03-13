@@ -70,6 +70,18 @@ impl Coding {
             },
         }
     }
+
+    fn decode_lossy<'a>(&self, src: &'a [u8]) -> Cow<'a, str> {
+        match self {
+            Coding::ERS(c) => {
+                let (out, _, _) = c.decode(src.as_ref());
+                out
+            }
+            Coding::OCC { decode: dt, .. } => {
+                Cow::from(dt.decode_string_lossy(src))
+            }
+        }
+    }
 }
 
 
