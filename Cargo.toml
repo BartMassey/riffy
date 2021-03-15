@@ -4,7 +4,5 @@ version = "0.1.0"
 authors = ["Bart Massey <bart.massey@gmail.com>"]
 edition = "2018"
 
-[dependencies.codepage-strings]
-git = "https://github.com/BartMassey/codepage-strings"
-branch = "main"
-version = "0.1"
+[dependencies]
+codepage-strings = "1.0"
